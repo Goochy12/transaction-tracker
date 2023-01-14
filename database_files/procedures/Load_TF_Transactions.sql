@@ -1,10 +1,11 @@
 CREATE PROCEDURE `Load_TF_Transactions` ()
 BEGIN
-INSERT INTO TF_Transactions (id, TD_Salary_id, TD_Rent_id, date, cost, description)
+INSERT INTO TF_Transactions (meta_hash, TD_Salary_id, TD_Rent_id, id, date, cost, description)
 SELECT
-tf.id
+tf.meta_hash
 , IFNULL(salary.id, -1) AS TD_Salary_id
 , IFNULL(rent.id, -1) AS TD_Rent_id
+, tf.id
 , tf.date
 , tf.cost
 , tf.description
