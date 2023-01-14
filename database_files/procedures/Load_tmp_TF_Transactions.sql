@@ -1,8 +1,9 @@
 CREATE PROCEDURE `Load_tmp_TF_Transactions` ()
 BEGIN
-    INSERT INTO tmp_TF_Transactions (id, date, cost, description)
+    INSERT INTO tmp_TF_Transactions (meta_hash, id, date, cost, description)
     select
-    id
+    meta_hash
+    , id
     , date
     , cost
     , description
