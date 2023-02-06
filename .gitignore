@@ -107,4 +107,4 @@ venv.bak/
 .mypy_cache/
 
 
-*parameters.json
+parameters.json
