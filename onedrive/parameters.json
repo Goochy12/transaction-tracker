@@ -1,7 +1,0 @@
-{
-  "authority": "https://login.microsoftonline.com/1fbe6edc-7fea-4bd8-afa2-cedff8dfec5d",
-  "client_id": "2fbf3f37-bea1-4c17-b416-f8f85edcf2e9",
-  "scope": [ "https://graph.microsoft.com/.default" ],
-  "secret": "b~i8Q~wmpccS5Mgxz0fQgdyTVjM1k8-atzcbraOL",
-  "endpoint": "https://graph.microsoft.com/v1.0/users"
-}
